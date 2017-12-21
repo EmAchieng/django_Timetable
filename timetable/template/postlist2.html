@@ -1,0 +1,789 @@
+{# yonetim/templates/postlist2.html #}
+{% from timetable %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+    <title> Emily's Blog Page </title>
+
+	<meta name="author" content="your name" />
+	<meta name="description" content="" />
+
+
+	<link rel="stylesheet" href="post_list.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+
+
+	<div id="page">
+		<div id="logo">
+			<h1><a href="/" id="logoLink"> My Blog Page
+            </a></h1>
+		</div>
+
+
+
+		<div id="nav">
+			<ul>
+
+
+                <li><a href="post_list.html"> Home  </a></li>
+                <li><a href="postlist1.html"> Signup </a></li>
+                <li><a href="postlist2.html"> Subjects </a> </li>
+                <li><a href="postlist3.html"> Timetable </a></li>
+
+			</ul>
+		</div>
+
+
+
+
+
+
+
+		<div id="content">
+			<h2>Table Data</h2>
+
+
+
+
+
+		</div>
+
+<form action="/action_page.php">
+    <h3>Insert a Course Code: </h3><br>
+  <input type="integer" name="coursecode" value="code">
+
+  <input type="submit" value="Submit">
+</form>
+
+
+
+<table>
+    <tr>
+    <th>교과목코드</th>
+    <th>교과목명</th>
+    <th>학점</th>
+      <th> 요일</th>
+      <th> 요일 </th>
+
+  </tr>
+
+
+
+
+
+    <tr>
+    <td>COR1001  </td>
+    <td>읽기와 쓰기	  </td>
+    <td>  3 </td>
+       <td> 월  </td>
+       <td> 1 </td>
+  </tr>
+
+
+    <tr>
+    <td> COR1003 </td>
+    <td> 글로벌 의사소통1 </td>
+    <td> 3 </td>
+       <td>  화</td>
+       <td> 2 </td>
+  </tr>
+
+
+    </tr>
+    <tr>
+    <td> COR1005	 </td>
+    <td>글로벌 의사소통Ⅰ(고급)	 </td>
+    <td>  2 </td>
+       <td> 수 </td>
+       <td>	3  </td>
+  </tr>
+
+
+
+</tr>
+    <tr>
+    <td> HFS2001 </td>
+    <td> 철학적 인간학 </td>
+    <td> 2 </td>
+       <td> 목 </td>
+       <td>4  </td>
+  </tr>
+
+    </tr>
+    <tr>
+    <td> HFS2002 </td>
+    <td> 신학적 인간학 </td>
+    <td> 3	</td>
+       <td> 금 </td>
+       <td>5  </td>
+  </tr>
+
+    </tr>
+    <tr>
+    <td>HFS2003  </td>
+    <td> 그리스도교 윤리 </td>
+    <td> 3  </td>
+       <td>  월</td>
+       <td>	6  </td>
+  </tr>
+
+
+
+
+    <tr>
+    <td>ETS2001  </td>
+    <td> 현대세계와 윤리문제 </td>
+    <td> 3 </td>
+       <td> 화 </td>
+       <td> 7 </td>
+  </tr>
+
+
+
+    <tr>
+    <td> ETS2002 </td>
+    <td>논리와 비판적 사고  </td>
+    <td> 2 </td>
+       <td> 수</td>
+       <td> 1	 </td>
+  </tr>
+
+
+
+    <tr>
+    <td>ETS2003  </td>
+    <td> 철학 산책 </td>
+    <td> 	2 </td>
+       <td> 목 </td>
+       <td> 	2 </td>
+  </tr>
+
+
+
+    <tr>
+    <td>ETS2004  </td>
+    <td> 종교와 세계 문화 </td>
+    <td> 2 </td>
+       <td> 금 </td>
+       <td> 	3 </td>
+  </tr>
+
+
+
+    <tr>
+    <td> CHS2001 </td>
+    <td>한국 문화와 역사  </td>
+    <td>3  </td>
+       <td> 월 </td>
+       <td> 4 </td>
+  </tr>
+
+<tr>
+    <td> CHS2002 </td>
+    <td>현대 한국의 형성  </td>
+    <td>3  </td>
+       <td> 화 </td>
+       <td> 5 </td>
+  </tr>
+
+<tr>
+    <td> CHS2003 </td>
+    <td>현대 동아시아의 형성  </td>
+    <td>3  </td>
+       <td> 수 </td>
+       <td> 5 </td>
+  </tr>
+
+
+    <tr>
+    <td> CHS2004	</td>
+    <td>현대 서양의 형성  </td>
+    <td>3  </td>
+       <td> 목</td>
+       <td> 7 </td>
+  </tr>
+
+
+    <tr>
+    <td> CHS2006	</td>
+    <td>역사란 무엇인가 </td>
+    <td>3  </td>
+       <td>금 </td>
+       <td> 1 </td>
+  </tr>
+
+
+     <tr>
+    <td> SHS2001	</td>
+    <td>현대사회의 이해 </td>
+    <td>2  </td>
+       <td>월 </td>
+       <td> 2</td>
+  </tr>
+
+
+    <tr>
+    <td> SHS2002	</td>
+    <td>한국과 세계	 </td>
+    <td>2  </td>
+       <td>화 </td>
+       <td> 3</td>
+  </tr>
+
+
+<tr>
+    <td> SHS2005	</td>
+    <td>법과 공학	 </td>
+    <td>3  </td>
+       <td>수 </td>
+       <td> 4</td>
+  </tr>
+
+<tr>
+    <td> SHS2006	</td>
+    <td>기업과경영의이해(기업과 공학) </td>
+    <td>3  </td>
+       <td>목</td>
+       <td> 	5  </td>
+  </tr>
+
+
+    <tr>
+    <td> SHS2003	</td>
+    <td>커뮤니케이션과 사회 </td>
+    <td>3  </td>
+       <td>금</td>
+       <td> 	6  </td>
+  </tr>
+
+<tr>
+    <td> SHS2004	</td>
+    <td>경제와 사회 </td>
+    <td>	2  </td>
+       <td>월</td>
+       <td> 	7  </td>
+  </tr>
+
+
+    <tr>
+    <td> SHS2007	</td>
+    <td>생활속의 심리학 </td>
+    <td>	2  </td>
+       <td>화</td>
+       <td> 	1  </td>
+  </tr>
+
+<tr>
+    <td> STS2001	</td>
+    <td>자연과 인간 </td>
+    <td>	2  </td>
+       <td>수</td>
+       <td> 	2  </td>
+  </tr>
+
+
+    <tr>
+    <td> STS2002	</td>
+    <td>생명과 환경 </td>
+    <td>	3 </td>
+       <td>목	</td>
+       <td> 	3  </td>
+  </tr>
+
+    <tr>
+    <td> STS2003		</td>
+    <td>공학과 기술의 이해 </td>
+    <td>	3 </td>
+       <td>금	</td>
+       <td> 	4 </td>
+  </tr>
+
+
+     <tr>
+    <td> STS2004	</td>
+    <td>대학수학 </td>
+    <td>	3 </td>
+       <td>월	</td>
+       <td> 	5 </td>
+  </tr>
+
+
+    <tr>
+    <td> STS2005	</td>
+    <td>미적분학Ⅰ </td>
+    <td>	3 </td>
+       <td>화	</td>
+       <td> 	6 </td>
+  </tr>
+
+
+    <tr>
+    <td> STS2006	</td>
+    <td>미적분학Ⅱ </td>
+    <td>	3 </td>
+       <td>수	</td>
+       <td> 	7 </td>
+  </tr>
+
+
+<tr>
+    <td> STU4011	</td>
+    <td>	우주와 원자시대 </td>
+    <td>	2</td>
+       <td>목	</td>
+       <td> 		1 </td>
+  </tr>
+
+
+    <tr>
+    <td> CHS2005	</td>
+    <td>		과학사 </td>
+    <td>	2</td>
+       <td>금	</td>
+       <td> 		2 </td>
+  </tr>
+
+    <tr>
+    <td> LCS2001	</td>
+    <td>		독일언어와 문화Ⅰ </td>
+    <td>	3 </td>
+       <td>월</td>
+       <td> 		3 </td>
+  </tr>
+
+
+
+    <tr>
+    <td> LCS2003	</td>
+    <td>		프랑스언어와 문화Ⅰ </td>
+    <td>	3 </td>
+       <td>화</td>
+       <td> 		4 </td>
+  </tr>
+
+
+     <tr>
+    <td> LCS2005	</td>
+    <td>		중국언어와 문화Ⅰ </td>
+    <td>	3 </td>
+       <td>수</td>
+       <td> 		5 </td>
+  </tr>
+
+
+    <tr>
+    <td> LCS2007	</td>
+    <td>		일본언어와 문화Ⅰ </td>
+    <td>	2 </td>
+       <td> 목 </td>
+       <td> 		6 </td>
+  </tr>
+
+
+    <tr>
+    <td> TLS1001	</td>
+    <td>		독서와 토론 </td>
+    <td>	2 </td>
+       <td> 금</td>
+       <td> 		7 </td>
+  </tr>
+
+
+    <tr>
+    <td> TLS1002	</td>
+    <td>		비평적 글쓰기 연습 </td>
+    <td>	2 </td>
+       <td> 월</td>
+       <td> 		1 </td>
+  </tr>
+
+
+     <tr>
+    <td> TLS1003	</td>
+    <td>		스토리텔링 글쓰기 연습 </td>
+    <td>	3 </td>
+       <td> 화</td>
+       <td> 		2 </td>
+  </tr>
+
+
+      <tr>
+    <td>TLS1004	</td>
+    <td>		글로벌 의사소통2 </td>
+    <td>	3 </td>
+       <td> 수</td>
+       <td> 		3</td>
+  </tr>
+
+
+
+     <tr>
+    <td>TLS1005	</td>
+    <td>		영어읽기와 토론연습 </td>
+    <td>	3 </td>
+       <td> 목</td>
+       <td> 		4 </td>
+  </tr>
+
+
+
+    <tr>
+    <td>TLS1006</td>
+    <td>		실용영어와 발표연습 </td>
+    <td>	3 </td>
+       <td> 금 </td>
+       <td> 		5 </td>
+  </tr>
+
+
+
+    <tr>
+    <td>HSS3002</td>
+    <td>	사회봉사 </td>
+    <td>	3 </td>
+       <td> 월 </td>
+       <td> 		6 </td>
+  </tr>
+
+<tr>
+    <td>HSS3004</td>
+    <td>	특수교육과 장애의 이해 </td>
+    <td>	2</td>
+       <td> 화</td>
+       <td> 		7 </td>
+  </tr>
+
+
+    <tr>
+    <td>HSS3005</td>
+    <td>		수화의 이해	 </td>
+    <td>	2</td>
+       <td> 수</td>
+       <td> 		1 </td>
+  </tr>
+
+<tr>
+    <td>SHU4050</td>
+    <td>		국제개발협력의 이해	 </td>
+    <td>	3</td>
+       <td> 목</td>
+       <td> 		2 </td>
+  </tr>
+
+<tr>
+    <td>HSS3019</td>
+    <td>		세계를 간다	 </td>
+    <td>	3</td>
+       <td> 금</td>
+       <td> 		3 </td>
+  </tr>
+
+    <tr>
+    <td>LED3001</td>
+    <td>		성경으로 배우는 리더십	 </td>
+    <td>	3</td>
+       <td>월</td>
+       <td> 		4 </td>
+  </tr>
+
+
+<tr>
+    <td>LED3002</td>
+    <td>		리더십 훈련	 </td>
+    <td>	2</td>
+       <td>화</td>
+       <td> 		5 </td>
+  </tr>
+
+
+    <tr>
+    <td>LED3005</td>
+    <td>		기업경영 리더십 </td>
+    <td>	2</td>
+       <td>수</td>
+       <td> 			6 </td>
+  </tr>
+
+<tr>
+    <td>LED3015	</td>
+    <td>		자기브랜드리더십	 </td>
+    <td>	2</td>
+       <td>목</td>
+       <td> 			7</td>
+  </tr>
+
+    <tr>
+    <td>SHU4006	</td>
+    <td>		인권과 정의 </td>
+    <td>	2</td>
+       <td>금</td>
+       <td> 			1</td>
+  </tr>
+
+
+    <tr>
+    <td>SHU4003	</td>
+    <td>		시민참여와 시민교육(민주시민교육) </td>
+    <td>	3</td>
+       <td>월</td>
+       <td> 			2</td>
+  </tr>
+
+
+    <tr>
+    <td>SHU4015	</td>
+    <td>		사회복지의 이해 </td>
+    <td>	3</td>
+       <td>화</td>
+       <td> 			3</td>
+  </tr>
+
+
+
+<tr>
+    <td>HSS3001	</td>
+    <td>			인간과 인성 </td>
+    <td>	3</td>
+       <td>수</td>
+       <td> 			4 </td>
+  </tr>
+
+
+
+    <tr>
+    <td>HSS3021	</td>
+    <td>			인간과 지성 </td>
+    <td>	3</td>
+       <td>목</td>
+       <td> 			5 </td>
+  </tr>
+
+
+    <tr>
+    <td>HSS3022	</td>
+    <td>			인간과 영성 </td>
+    <td>	2</td>
+       <td>금</td>
+       <td> 			6 </td>
+  </tr>
+
+
+    <tr>
+    <td>HFU4003	</td>
+    <td>			생명윤리 </td>
+    <td>	2</td>
+       <td>월</td>
+       <td> 			7 </td>
+  </tr>
+
+
+     <tr>
+    <td>HFU4004</td>
+    <td>			성서와 생활 </td>
+    <td>	3</td>
+       <td>화</td>
+       <td> 			1 </td>
+  </tr>
+
+    <tr>
+    <td>HFU4005	</td>
+    <td>			개인과 공동체 </td>
+    <td>	3</td>
+       <td>수</td>
+       <td> 			2</td>
+  </tr>
+
+
+    <tr>
+    <td>HFU4008	</td>
+    <td>			신앙과 과학 </td>
+    <td>	3</td>
+       <td>목</td>
+       <td> 			3</td>
+  </tr>
+
+<tr>
+    <td>HFU4009</td>
+    <td>			영성과 문화예술 </td>
+    <td>	2</td>
+       <td>금</td>
+       <td> 			4</td>
+  </tr>
+
+
+    <tr>
+    <td>HFU4011</td>
+    <td>			가톨릭교회와 사회참여 </td>
+    <td>	2</td>
+       <td>월</td>
+       <td> 			5</td>
+  </tr>
+
+
+    <tr>
+    <td>HFU4012</td>
+    <td>			그리스도교 신앙과 영성</td>
+    <td>	2</td>
+       <td>화</td>
+       <td> 			6</td>
+  </tr>
+
+
+     <tr>
+    <td>HFU4014</td>
+    <td>			영성수련</td>
+    <td>	3</td>
+       <td>수</td>
+       <td> 			7 </td>
+  </tr>
+
+
+    <tr>
+    <td>HFU4021</td>
+    <td>			성화로 성경읽기</td>
+    <td>	3</td>
+       <td>목</td>
+       <td> 			1 </td>
+  </tr>
+
+
+     <tr>
+    <td>ETU4006</td>
+    <td>				이성과 신앙</td>
+    <td>	3</td>
+       <td>금</td>
+       <td> 			2 </td>
+  </tr>
+
+
+
+     <tr>
+    <td>LAU4039</td>
+    <td>				그리스도교 미술사</td>
+    <td>	3</td>
+       <td>월</td>
+       <td> 			3 </td>
+  </tr>
+
+
+    <tr>
+    <td>HFU4023</td>
+    <td>				진선미성</td>
+    <td>	3</td>
+       <td>화</td>
+       <td> 			4 </td>
+  </tr>
+
+    <tr>
+    <td>ETU4001</td>
+    <td>				환경윤리</td>
+    <td>	2</td>
+       <td>수</td>
+       <td> 			5 </td>
+  </tr>
+
+
+    <tr>
+    <td>ETU4002</td>
+    <td>				정보윤리학</td>
+    <td>	2</td>
+       <td>목</td>
+       <td> 			 6</td>
+  </tr>
+
+
+    <tr>
+    <td>ETU4003	</td>
+    <td>				직업과 윤리</td>
+    <td>	3</td>
+       <td>금</td>
+       <td> 			 7</td>
+  </tr>
+
+
+    <tr>
+    <td>ETU4004	</td>
+    <td>					동아시아 철학 고전 읽기	</td>
+    <td>	3</td>
+       <td>월</td>
+       <td> 			 1</td>
+  </tr>
+
+
+     <tr>
+    <td>ETU4004	</td>
+    <td>					서양철학 고전 읽기	</td>
+    <td>	3</td>
+       <td>화</td>
+       <td> 			 2</td>
+  </tr>
+
+
+    <tr>
+    <td>ETU4008	</td>
+    <td>					삶과 죽음	</td>
+    <td>	2</td>
+       <td>수</td>
+       <td> 			 3</td>
+  </tr>
+
+
+    <tr>
+    <td>ETU4009	</td>
+    <td>					영화와 철학		</td>
+    <td>	2</td>
+       <td>목</td>
+       <td> 			 4 </td>
+  </tr>
+
+
+    <tr>
+    <td>ETU4010	</td>
+    <td>					한국 문화와 종교	</td>
+    <td>	2</td>
+       <td>금</td>
+       <td> 			 5 </td>
+  </tr>
+
+<tr>
+    <td>ETU4016	</td>
+    <td>					종교,폭력,평화	</td>
+    <td>	3</td>
+       <td>월</td>
+       <td> 			 6 </td>
+  </tr>
+
+<tr>
+    <td>ETU4018	</td>
+    <td>						행복의 추구	</td>
+    <td>	3</td>
+       <td>화</td>
+       <td> 			 7</td>
+  </tr>
+
+
+
+
+
+</table>
+		<div id="footer">
+			<p>
+				Webpage made by <a href="/" target="_blank">[emily]</a>
+			</p>
+		</div>
+
+
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+	</div>
+</body>
+</html>
