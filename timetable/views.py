@@ -40,3 +40,10 @@ def user_login(request):
         # the login is a  GET request, so just show the user the login form.
         return render('login.html', {}, context)
 
+from django.http import HttpRequest
+
+def get_client_ip(request):
+    ip = request.META.get('HTTP_CF_CONNECTING_IP')
+    if ip is None:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
